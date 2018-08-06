@@ -11,7 +11,7 @@ $white: #fff;
 
 body {
   font-family: $futura;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +32,7 @@ li{
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
 	color: inherit;
 	transition-duration: 300ms;
 	cursor: pointer;
@@ -47,9 +47,15 @@ h2{
 }
 
 h3{
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     font-size: 1.5em;
 }
+
+h4{
+    font-size: 1.6em;
+    font-weight: 500 !important;
+}
+
 
 // Flex grid
 
@@ -273,6 +279,16 @@ h3{
     }
 }
 
+.image-container{
+    img{
+        width: 100%;
+    }
+}
+
+.section-title{
+    font-size: 2.5em;
+}
+
 ul{
     list-style-type: disc;
 }
@@ -403,15 +419,8 @@ ul{
 	flex-direction: column;
 }
 
-.relay{
-    background-image: url('../img/relay-hero.png');
-}
-
-.hype{
-    background-image: url('../img/hype-hero.jpeg');
-}
-
 .hero-banner-full{
+    background-image: url('../img/hero.png');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -584,7 +593,7 @@ ul{
 
         &:focus{
             outline: none;
-            border-color: #424242;
+            border-color: #464646;
 
             &::placeholder{
                 opacity: 0.3;
@@ -609,7 +618,7 @@ ul{
 .contact-form-dark{
     input[type=text],input[type=email]{
         background-color: #f7f7f7;
-        border: 3px solid #737373;
+        border: 3px solid #d6d6d6;
     }
 }
 

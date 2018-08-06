@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 
 	$('.contact-form').submit(function(){
 		$(this).fadeOut();
-		$('#form-header').fadeOut(function(){
+		$('#form-header, .form-info').fadeOut(function(){
 			setTimeout(function(){
 				$('#form-header').html('Your message has been sent. Thanks <i class="fas fa-hand-peace"></i>');
 				$('#form-header').fadeIn();
@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 	});
 
 	$(".form-scroll").click(function(){
-		$("html").animate({scrollTop: $(".contact-form").offset().top}, 1500)
+		$("html").animate({scrollTop: $(".form-header-container").offset().top}, 1500)
 		$("#form-name").focus();
 	});
 
